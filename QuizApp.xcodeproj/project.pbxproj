@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB735424B27FF986ECD081F8 /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592EE1562456C6B0A04907F2 /* Pods_QuizApp.framework */; };
+		EF1D85722264C85700C8CD02 /* batsuImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1D85702264C85700C8CD02 /* batsuImage.png */; };
+		EF1D85732264C85700C8CD02 /* maruImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1D85712264C85700C8CD02 /* maruImage.png */; };
+		EF1D857E2265615400C8CD02 /* DetailViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D857D2265615400C8CD02 /* DetailViewController3.swift */; };
+		F2099977227205A5007DA8B4 /* mr=mc.png in Resources */ = {isa = PBXBuildFile; fileRef = F2099976227205A5007DA8B4 /* mr=mc.png */; };
+		F2099979227205B8007DA8B4 /* kouritu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2099978227205B8007DA8B4 /* kouritu.png */; };
+		F209997B22721802007DA8B4 /* yosannsenn.png in Resources */ = {isa = PBXBuildFile; fileRef = F209997A22721802007DA8B4 /* yosannsenn.png */; };
+		F209997D22721810007DA8B4 /* vc-up.png in Resources */ = {isa = PBXBuildFile; fileRef = F209997C22721810007DA8B4 /* vc-up.png */; };
+		F209997F22722D1D007DA8B4 /* leonchef.png in Resources */ = {isa = PBXBuildFile; fileRef = F209997E22722D1D007DA8B4 /* leonchef.png */; };
+		F209998122722D31007DA8B4 /* siyutu.png in Resources */ = {isa = PBXBuildFile; fileRef = F209998022722D31007DA8B4 /* siyutu.png */; };
+		F2115FEE22801E1F00202A75 /* seisankansu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2115FED22801E1F00202A75 /* seisankansu.png */; };
+		F2115FF02280327F00202A75 /* hiyokannsu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2115FEF2280327F00202A75 /* hiyokannsu.png */; };
+		F21DC89F226EF13C00746D79 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DC89E226EF13C00746D79 /* TabBarController.swift */; };
+		F23719F1224B87B300486DCC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23719F0224B87B300486DCC /* Result.swift */; };
+		F23719F3224B9FBD00486DCC /* DetailViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23719F2224B9FBD00486DCC /* DetailViewController1.swift */; };
+		F23719F5224BA12500486DCC /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23719F4224BA12500486DCC /* DetailViewController2.swift */; };
+		F2409E632270D5C5005F060E /* icons8-home-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E622270D5C5005F060E /* icons8-home-48@2x.png */; };
+		F2409E652270D5D0005F060E /* icons8-menu-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E642270D5D0005F060E /* icons8-menu-48@2x.png */; };
+		F2409E672270D5D9005F060E /* icons8-video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E662270D5D9005F060E /* icons8-video@2x.png */; };
+		F2409E692270EEBD005F060E /* danryokusei.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E682270EEBD005F060E /* danryokusei.png */; };
+		F2409E6B2270EEC9005F060E /* zai1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E6A2270EEC9005F060E /* zai1.png */; };
+		F2409E6D2270EED8005F060E /* zai2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E6C2270EED8005F060E /* zai2.png */; };
+		F2409E6F2270EEE3005F060E /* zai3.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E6E2270EEE2005F060E /* zai3.png */; };
+		F2409E712270EF14005F060E /* kouka.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E702270EF14005F060E /* kouka.png */; };
+		F2409E732270EF21005F060E /* tc.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E722270EF21005F060E /* tc.png */; };
+		F2409E752270EF39005F060E /* warurasu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E742270EF39005F060E /* warurasu.png */; };
+		F2409E772270EF47005F060E /* ma-syaru.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E762270EF47005F060E /* ma-syaru.png */; };
+		F2409E792270EF8F005F060E /* yojo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E782270EF8F005F060E /* yojo.png */; };
+		F2409E7B2270EF9C005F060E /* sikaju.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E7A2270EF9B005F060E /* sikaju.png */; };
+		F2409E7D2270F076005F060E /* syotoku.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E7C2270F076005F060E /* syotoku.png */; };
+		F2409E7F2270F086005F060E /* kakaku.png in Resources */ = {isa = PBXBuildFile; fileRef = F2409E7E2270F086005F060E /* kakaku.png */; };
+		F25F796F2281A4DF00C4B126 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F795A2281A4DE00C4B126 /* iTunesArtwork@1x.png */; };
+		F25F79702281A4DF00C4B126 /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F795C2281A4DE00C4B126 /* Icon-App-76x76@2x.png */; };
+		F25F79712281A4DF00C4B126 /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F795D2281A4DE00C4B126 /* Icon-App-29x29@1x.png */; };
+		F25F79722281A4DF00C4B126 /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F795E2281A4DE00C4B126 /* Icon-App-40x40@1x.png */; };
+		F25F79732281A4DF00C4B126 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F795F2281A4DE00C4B126 /* Icon-App-20x20@1x.png */; };
+		F25F79742281A4DF00C4B126 /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79602281A4DE00C4B126 /* Icon-App-83.5x83.5@2x.png */; };
+		F25F79752281A4DF00C4B126 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79612281A4DE00C4B126 /* Icon-App-20x20@3x.png */; };
+		F25F79762281A4DF00C4B126 /* ItunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79622281A4DE00C4B126 /* ItunesArtwork@2x.png */; };
+		F25F79772281A4DF00C4B126 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F25F79632281A4DE00C4B126 /* Contents.json */; };
+		F25F79782281A4DF00C4B126 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79642281A4DE00C4B126 /* Icon-App-20x20@2x.png */; };
+		F25F79792281A4DF00C4B126 /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79652281A4DE00C4B126 /* Icon-App-29x29@3x.png */; };
+		F25F797A2281A4DF00C4B126 /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79662281A4DE00C4B126 /* Icon-App-40x40@2x.png */; };
+		F25F797B2281A4DF00C4B126 /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79672281A4DE00C4B126 /* Icon-App-60x60@3x.png */; };
+		F25F797C2281A4DF00C4B126 /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79682281A4DE00C4B126 /* Icon-App-60x60@2x.png */; };
+		F25F797D2281A4DF00C4B126 /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F79692281A4DE00C4B126 /* Icon-App-76x76@1x.png */; };
+		F25F797E2281A4DF00C4B126 /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F796A2281A4DE00C4B126 /* Icon-App-40x40@3x.png */; };
+		F25F797F2281A4DF00C4B126 /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F796B2281A4DE00C4B126 /* Icon-App-29x29@2x.png */; };
+		F25F79812281A4DF00C4B126 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F796D2281A4DE00C4B126 /* iTunesArtwork@2x.png */; };
+		F25F79822281A4DF00C4B126 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F25F796E2281A4DE00C4B126 /* iTunesArtwork@3x.png */; };
+		F25F79862281A74F00C4B126 /* QuizIcon２.001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F25F79852281A74F00C4B126 /* QuizIcon２.001.jpeg */; };
+		F286A1B02264B238007667B0 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286A1AE2264B238007667B0 /* ResultTableViewCell.swift */; };
+		F286A1B12264B238007667B0 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F286A1AF2264B238007667B0 /* ResultTableViewCell.xib */; };
+		F28979B3224513DE00CA7F4D /* QuizViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28979B2224513DE00CA7F4D /* QuizViewController2.swift */; };
+		F28979B5224513F600CA7F4D /* QuizViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28979B4224513F600CA7F4D /* QuizViewController3.swift */; };
+		F28979B72245141300CA7F4D /* QuizViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28979B62245141300CA7F4D /* QuizViewController4.swift */; };
+		F28979B92245144200CA7F4D /* QuizViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28979B82245144200CA7F4D /* QuizViewController5.swift */; };
+		F28979BB2245146C00CA7F4D /* QuizViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28979BA2245146C00CA7F4D /* QuizViewController6.swift */; };
+		F2B3C0C3225790B50091B470 /* DetailViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3C0C2225790B50091B470 /* DetailViewController4.swift */; };
+		F2B3C0C5225790CE0091B470 /* DetailViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3C0C4225790CE0091B470 /* DetailViewController5.swift */; };
+		F2B3C0C7225790E60091B470 /* DetailViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3C0C6225790E60091B470 /* DetailViewController6.swift */; };
+		F2CE98ED226F66B900BE68F8 /* mc.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE98EC226F66B900BE68F8 /* mc.png */; };
+		F2CE98EF226F66D400BE68F8 /* pai1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE98EE226F66D400BE68F8 /* pai1.png */; };
+		F2CE98F1226F66E500BE68F8 /* pai2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE98F0226F66E500BE68F8 /* pai2.png */; };
+		F2CE98F3226F66F100BE68F8 /* pai3.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE98F2226F66F100BE68F8 /* pai3.png */; };
+		F2CE98F7226F6A5800BE68F8 /* Button（新規登録）.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CE98F6226F6A5800BE68F8 /* Button（新規登録）.png */; };
+		F2CE98F9226F8F1A00BE68F8 /* SelectionQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE98F8226F8F1A00BE68F8 /* SelectionQuiz.swift */; };
+		F2DB72AF2282DE9700859E8E /* kid_job_boy_teacher.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DB72AE2282DE9700859E8E /* kid_job_boy_teacher.png */; };
+		F2DB72B12282DF8100859E8E /* hukidasi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DB72B02282DF8000859E8E /* hukidasi.png */; };
+		F2E333E32260B5FC00B3C0F6 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E333E22260B5FC00B3C0F6 /* ViewController3.swift */; };
+		F2E333E72260B70600B3C0F6 /* SecondViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E333E62260B70600B3C0F6 /* SecondViewController3.swift */; };
+		F2E555C92244C914006A3E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E555C82244C914006A3E62 /* AppDelegate.swift */; };
+		F2E555CB2244C914006A3E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E555CA2244C914006A3E62 /* ViewController.swift */; };
+		F2E555CE2244C914006A3E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E555CC2244C914006A3E62 /* Main.storyboard */; };
+		F2E555D02244C916006A3E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E555CF2244C916006A3E62 /* Assets.xcassets */; };
+		F2E555D32244C916006A3E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E555D12244C916006A3E62 /* LaunchScreen.storyboard */; };
+		F2E555DF2244D875006A3E62 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E555DE2244D875006A3E62 /* Quiz.swift */; };
+		F2E555E92244E1A8006A3E62 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E555E82244E1A8006A3E62 /* SecondViewController.swift */; };
+		F2E555EB2244E343006A3E62 /* QuizViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E555EA2244E343006A3E62 /* QuizViewController1.swift */; };
+		F2F6D04F227ED9F600872CEF /* bb8-dribbble.gif in Resources */ = {isa = PBXBuildFile; fileRef = F2F6D04E227ED9F600872CEF /* bb8-dribbble.gif */; };
+		F2F6D052227EECAE00872CEF /* koyosaidaika.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F6D051227EECAE00872CEF /* koyosaidaika.png */; };
+		F2F6D054227EFDDF00872CEF /* sisyutusaidai.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F6D053227EFDDF00872CEF /* sisyutusaidai.png */; };
+		F2F6D056227EFE2500872CEF /* rodokyoukyu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F6D055227EFE2500872CEF /* rodokyoukyu.png */; };
+		F2F6D058227F02D100872CEF /* izitennkann.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F6D057227F02D100872CEF /* izitennkann.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		270205EC0DE0B0B94213AF94 /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
+		592EE1562456C6B0A04907F2 /* Pods_QuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		748D40009674A5759A2ABDAA /* Pods-QuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.debug.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF1D85702264C85700C8CD02 /* batsuImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsuImage.png; sourceTree = "<group>"; };
+		EF1D85712264C85700C8CD02 /* maruImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maruImage.png; sourceTree = "<group>"; };
+		EF1D857D2265615400C8CD02 /* DetailViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController3.swift; sourceTree = "<group>"; };
+		F2099976227205A5007DA8B4 /* mr=mc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mr=mc.png"; sourceTree = "<group>"; };
+		F2099978227205B8007DA8B4 /* kouritu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kouritu.png; sourceTree = "<group>"; };
+		F209997A22721802007DA8B4 /* yosannsenn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yosannsenn.png; sourceTree = "<group>"; };
+		F209997C22721810007DA8B4 /* vc-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vc-up.png"; sourceTree = "<group>"; };
+		F209997E22722D1D007DA8B4 /* leonchef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leonchef.png; sourceTree = "<group>"; };
+		F209998022722D31007DA8B4 /* siyutu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siyutu.png; sourceTree = "<group>"; };
+		F2115FED22801E1F00202A75 /* seisankansu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seisankansu.png; sourceTree = "<group>"; };
+		F2115FEF2280327F00202A75 /* hiyokannsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiyokannsu.png; sourceTree = "<group>"; };
+		F21DC89E226EF13C00746D79 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F23719F0224B87B300486DCC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F23719F2224B9FBD00486DCC /* DetailViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController1.swift; sourceTree = "<group>"; };
+		F23719F4224BA12500486DCC /* DetailViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
+		F2409E622270D5C5005F060E /* icons8-home-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-home-48@2x.png"; sourceTree = "<group>"; };
+		F2409E642270D5D0005F060E /* icons8-menu-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-48@2x.png"; sourceTree = "<group>"; };
+		F2409E662270D5D9005F060E /* icons8-video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-video@2x.png"; sourceTree = "<group>"; };
+		F2409E682270EEBD005F060E /* danryokusei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danryokusei.png; sourceTree = "<group>"; };
+		F2409E6A2270EEC9005F060E /* zai1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zai1.png; sourceTree = "<group>"; };
+		F2409E6C2270EED8005F060E /* zai2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zai2.png; sourceTree = "<group>"; };
+		F2409E6E2270EEE2005F060E /* zai3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zai3.png; sourceTree = "<group>"; };
+		F2409E702270EF14005F060E /* kouka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kouka.png; sourceTree = "<group>"; };
+		F2409E722270EF21005F060E /* tc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tc.png; sourceTree = "<group>"; };
+		F2409E742270EF39005F060E /* warurasu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warurasu.png; sourceTree = "<group>"; };
+		F2409E762270EF47005F060E /* ma-syaru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ma-syaru.png"; sourceTree = "<group>"; };
+		F2409E782270EF8F005F060E /* yojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yojo.png; sourceTree = "<group>"; };
+		F2409E7A2270EF9B005F060E /* sikaju.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sikaju.png; sourceTree = "<group>"; };
+		F2409E7C2270F076005F060E /* syotoku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syotoku.png; sourceTree = "<group>"; };
+		F2409E7E2270F086005F060E /* kakaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kakaku.png; sourceTree = "<group>"; };
+		F25F795A2281A4DE00C4B126 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		F25F795C2281A4DE00C4B126 /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		F25F795D2281A4DE00C4B126 /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		F25F795E2281A4DE00C4B126 /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		F25F795F2281A4DE00C4B126 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		F25F79602281A4DE00C4B126 /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		F25F79612281A4DE00C4B126 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		F25F79622281A4DE00C4B126 /* ItunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ItunesArtwork@2x.png"; sourceTree = "<group>"; };
+		F25F79632281A4DE00C4B126 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F25F79642281A4DE00C4B126 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		F25F79652281A4DE00C4B126 /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		F25F79662281A4DE00C4B126 /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		F25F79672281A4DE00C4B126 /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		F25F79682281A4DE00C4B126 /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		F25F79692281A4DE00C4B126 /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		F25F796A2281A4DE00C4B126 /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		F25F796B2281A4DE00C4B126 /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		F25F796D2281A4DE00C4B126 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		F25F796E2281A4DE00C4B126 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		F25F79852281A74F00C4B126 /* QuizIcon２.001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QuizIcon２.001.jpeg"; sourceTree = "<group>"; };
+		F286A1AE2264B238007667B0 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		F286A1AF2264B238007667B0 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		F28979B2224513DE00CA7F4D /* QuizViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController2.swift; sourceTree = "<group>"; };
+		F28979B4224513F600CA7F4D /* QuizViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController3.swift; sourceTree = "<group>"; };
+		F28979B62245141300CA7F4D /* QuizViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController4.swift; sourceTree = "<group>"; };
+		F28979B82245144200CA7F4D /* QuizViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController5.swift; sourceTree = "<group>"; };
+		F28979BA2245146C00CA7F4D /* QuizViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController6.swift; sourceTree = "<group>"; };
+		F2B3C0C2225790B50091B470 /* DetailViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController4.swift; sourceTree = "<group>"; };
+		F2B3C0C4225790CE0091B470 /* DetailViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController5.swift; sourceTree = "<group>"; };
+		F2B3C0C6225790E60091B470 /* DetailViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController6.swift; sourceTree = "<group>"; };
+		F2CE98EC226F66B900BE68F8 /* mc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mc.png; sourceTree = "<group>"; };
+		F2CE98EE226F66D400BE68F8 /* pai1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pai1.png; sourceTree = "<group>"; };
+		F2CE98F0226F66E500BE68F8 /* pai2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pai2.png; sourceTree = "<group>"; };
+		F2CE98F2226F66F100BE68F8 /* pai3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pai3.png; sourceTree = "<group>"; };
+		F2CE98F6226F6A5800BE68F8 /* Button（新規登録）.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button（新規登録）.png"; sourceTree = "<group>"; };
+		F2CE98F8226F8F1A00BE68F8 /* SelectionQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionQuiz.swift; sourceTree = "<group>"; };
+		F2DB72AE2282DE9700859E8E /* kid_job_boy_teacher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kid_job_boy_teacher.png; sourceTree = "<group>"; };
+		F2DB72B02282DF8000859E8E /* hukidasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hukidasi.png; sourceTree = "<group>"; };
+		F2E333E22260B5FC00B3C0F6 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		F2E333E62260B70600B3C0F6 /* SecondViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController3.swift; sourceTree = "<group>"; };
+		F2E555C52244C914006A3E62 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E555C82244C914006A3E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2E555CA2244C914006A3E62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2E555CD2244C914006A3E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2E555CF2244C916006A3E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2E555D22244C916006A3E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2E555D42244C916006A3E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E555DE2244D875006A3E62 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		F2E555E82244E1A8006A3E62 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F2E555EA2244E343006A3E62 /* QuizViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController1.swift; sourceTree = "<group>"; };
+		F2F6D04E227ED9F600872CEF /* bb8-dribbble.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bb8-dribbble.gif"; sourceTree = "<group>"; };
+		F2F6D051227EECAE00872CEF /* koyosaidaika.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koyosaidaika.png; sourceTree = "<group>"; };
+		F2F6D053227EFDDF00872CEF /* sisyutusaidai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sisyutusaidai.png; sourceTree = "<group>"; };
+		F2F6D055227EFE2500872CEF /* rodokyoukyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rodokyoukyu.png; sourceTree = "<group>"; };
+		F2F6D057227F02D100872CEF /* izitennkann.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = izitennkann.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2E555C22244C914006A3E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB735424B27FF986ECD081F8 /* Pods_QuizApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		781D5FCF295461F5FA6557EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				592EE1562456C6B0A04907F2 /* Pods_QuizApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1D856F2264C85700C8CD02 /* まるバツ画像 */ = {
+			isa = PBXGroup;
+			children = (
+				F2409E742270EF39005F060E /* warurasu.png */,
+				F2409E762270EF47005F060E /* ma-syaru.png */,
+				F2409E782270EF8F005F060E /* yojo.png */,
+				F2409E7A2270EF9B005F060E /* sikaju.png */,
+				F2CE98F6226F6A5800BE68F8 /* Button（新規登録）.png */,
+				EF1D85702264C85700C8CD02 /* batsuImage.png */,
+				EF1D85712264C85700C8CD02 /* maruImage.png */,
+			);
+			path = "まるバツ画像";
+			sourceTree = "<group>";
+		};
+		EF1D85742265609700C8CD02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2E555DE2244D875006A3E62 /* Quiz.swift */,
+				F2CE98F8226F8F1A00BE68F8 /* SelectionQuiz.swift */,
+				F23719F0224B87B300486DCC /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF1D85752265609F00C8CD02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2E555D12244C916006A3E62 /* LaunchScreen.storyboard */,
+				F2E555CC2244C914006A3E62 /* Main.storyboard */,
+				F286A1AE2264B238007667B0 /* ResultTableViewCell.swift */,
+				F286A1AF2264B238007667B0 /* ResultTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF1D8576226560A600C8CD02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2E555C82244C914006A3E62 /* AppDelegate.swift */,
+				F21DC89E226EF13C00746D79 /* TabBarController.swift */,
+				F2E555CA2244C914006A3E62 /* ViewController.swift */,
+				F2E555E82244E1A8006A3E62 /* SecondViewController.swift */,
+				F2E333E22260B5FC00B3C0F6 /* ViewController3.swift */,
+				F2E333E62260B70600B3C0F6 /* SecondViewController3.swift */,
+				EF1D8579226560F300C8CD02 /* クイズ画面1 */,
+				EF1D857A2265610700C8CD02 /* クイズ画面2 */,
+				EF1D857C2265612600C8CD02 /* クイズ画面3 */,
+				EF1D857F2265615B00C8CD02 /* クイズ画面4 */,
+				EF1D85802265616900C8CD02 /* クイズ画面5 */,
+				EF1D85812265617900C8CD02 /* クイズ画面6 */,
+				EF1D8578226560B800C8CD02 /* Images */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF1D8577226560AD00C8CD02 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		EF1D8578226560B800C8CD02 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB72AE2282DE9700859E8E /* kid_job_boy_teacher.png */,
+				F2DB72B02282DF8000859E8E /* hukidasi.png */,
+				F2F6D04E227ED9F600872CEF /* bb8-dribbble.gif */,
+				F2409E812270F0F3005F060E /* seisansya */,
+				F2409E802270F097005F060E /* syohisya */,
+				F2409E612270D53A005F060E /* icons */,
+				EF1D856F2264C85700C8CD02 /* まるバツ画像 */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EF1D8579226560F300C8CD02 /* クイズ画面1 */ = {
+			isa = PBXGroup;
+			children = (
+				F2E555EA2244E343006A3E62 /* QuizViewController1.swift */,
+				F23719F2224B9FBD00486DCC /* DetailViewController1.swift */,
+			);
+			name = "クイズ画面1";
+			path = "クイズ画面1";
+			sourceTree = "<group>";
+		};
+		EF1D857A2265610700C8CD02 /* クイズ画面2 */ = {
+			isa = PBXGroup;
+			children = (
+				F28979B2224513DE00CA7F4D /* QuizViewController2.swift */,
+				F23719F4224BA12500486DCC /* DetailViewController2.swift */,
+			);
+			name = "クイズ画面2";
+			path = "クイズ画面2";
+			sourceTree = "<group>";
+		};
+		EF1D857C2265612600C8CD02 /* クイズ画面3 */ = {
+			isa = PBXGroup;
+			children = (
+				F28979B4224513F600CA7F4D /* QuizViewController3.swift */,
+				EF1D857D2265615400C8CD02 /* DetailViewController3.swift */,
+			);
+			name = "クイズ画面3";
+			path = "クイズ画面3";
+			sourceTree = "<group>";
+		};
+		EF1D857F2265615B00C8CD02 /* クイズ画面4 */ = {
+			isa = PBXGroup;
+			children = (
+				F28979B62245141300CA7F4D /* QuizViewController4.swift */,
+				F2B3C0C2225790B50091B470 /* DetailViewController4.swift */,
+			);
+			name = "クイズ画面4";
+			path = "クイズ画面4";
+			sourceTree = "<group>";
+		};
+		EF1D85802265616900C8CD02 /* クイズ画面5 */ = {
+			isa = PBXGroup;
+			children = (
+				F28979B82245144200CA7F4D /* QuizViewController5.swift */,
+				F2B3C0C4225790CE0091B470 /* DetailViewController5.swift */,
+			);
+			name = "クイズ画面5";
+			path = "クイズ画面5";
+			sourceTree = "<group>";
+		};
+		EF1D85812265617900C8CD02 /* クイズ画面6 */ = {
+			isa = PBXGroup;
+			children = (
+				F28979BA2245146C00CA7F4D /* QuizViewController6.swift */,
+				F2B3C0C6225790E60091B470 /* DetailViewController6.swift */,
+			);
+			name = "クイズ画面6";
+			path = "クイズ画面6";
+			sourceTree = "<group>";
+		};
+		F2115FEC22801E0400202A75 /* keisann */ = {
+			isa = PBXGroup;
+			children = (
+				F2115FED22801E1F00202A75 /* seisankansu.png */,
+				F2115FEF2280327F00202A75 /* hiyokannsu.png */,
+			);
+			path = keisann;
+			sourceTree = "<group>";
+		};
+		F2409E612270D53A005F060E /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F25F79592281A4DE00C4B126 /* ios */,
+				F2409E662270D5D9005F060E /* icons8-video@2x.png */,
+				F2409E642270D5D0005F060E /* icons8-menu-48@2x.png */,
+				F2409E622270D5C5005F060E /* icons8-home-48@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		F2409E802270F097005F060E /* syohisya */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6D050227EEC6B00872CEF /* keisan */,
+				F2409E682270EEBD005F060E /* danryokusei.png */,
+				F2409E6A2270EEC9005F060E /* zai1.png */,
+				F2409E6C2270EED8005F060E /* zai2.png */,
+				F2409E6E2270EEE2005F060E /* zai3.png */,
+				F2409E702270EF14005F060E /* kouka.png */,
+				F2409E7C2270F076005F060E /* syotoku.png */,
+				F2409E7E2270F086005F060E /* kakaku.png */,
+				F209997A22721802007DA8B4 /* yosannsenn.png */,
+				F209997E22722D1D007DA8B4 /* leonchef.png */,
+			);
+			path = syohisya;
+			sourceTree = "<group>";
+		};
+		F2409E812270F0F3005F060E /* seisansya */ = {
+			isa = PBXGroup;
+			children = (
+				F2115FEC22801E0400202A75 /* keisann */,
+				F2CE98EE226F66D400BE68F8 /* pai1.png */,
+				F2CE98F0226F66E500BE68F8 /* pai2.png */,
+				F2CE98F2226F66F100BE68F8 /* pai3.png */,
+				F2CE98EC226F66B900BE68F8 /* mc.png */,
+				F2409E722270EF21005F060E /* tc.png */,
+				F2099976227205A5007DA8B4 /* mr=mc.png */,
+				F2099978227205B8007DA8B4 /* kouritu.png */,
+				F209997C22721810007DA8B4 /* vc-up.png */,
+				F209998022722D31007DA8B4 /* siyutu.png */,
+			);
+			path = seisansya;
+			sourceTree = "<group>";
+		};
+		F25F79592281A4DE00C4B126 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F25F795B2281A4DE00C4B126 /* AppIcon.appiconset */,
+				F25F795A2281A4DE00C4B126 /* iTunesArtwork@1x.png */,
+				F25F796D2281A4DE00C4B126 /* iTunesArtwork@2x.png */,
+				F25F796E2281A4DE00C4B126 /* iTunesArtwork@3x.png */,
+				F25F79852281A74F00C4B126 /* QuizIcon２.001.jpeg */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F25F795B2281A4DE00C4B126 /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				F25F795C2281A4DE00C4B126 /* Icon-App-76x76@2x.png */,
+				F25F795D2281A4DE00C4B126 /* Icon-App-29x29@1x.png */,
+				F25F795E2281A4DE00C4B126 /* Icon-App-40x40@1x.png */,
+				F25F795F2281A4DE00C4B126 /* Icon-App-20x20@1x.png */,
+				F25F79602281A4DE00C4B126 /* Icon-App-83.5x83.5@2x.png */,
+				F25F79612281A4DE00C4B126 /* Icon-App-20x20@3x.png */,
+				F25F79622281A4DE00C4B126 /* ItunesArtwork@2x.png */,
+				F25F79632281A4DE00C4B126 /* Contents.json */,
+				F25F79642281A4DE00C4B126 /* Icon-App-20x20@2x.png */,
+				F25F79652281A4DE00C4B126 /* Icon-App-29x29@3x.png */,
+				F25F79662281A4DE00C4B126 /* Icon-App-40x40@2x.png */,
+				F25F79672281A4DE00C4B126 /* Icon-App-60x60@3x.png */,
+				F25F79682281A4DE00C4B126 /* Icon-App-60x60@2x.png */,
+				F25F79692281A4DE00C4B126 /* Icon-App-76x76@1x.png */,
+				F25F796A2281A4DE00C4B126 /* Icon-App-40x40@3x.png */,
+				F25F796B2281A4DE00C4B126 /* Icon-App-29x29@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		F2E555BC2244C914006A3E62 = {
+			isa = PBXGroup;
+			children = (
+				F2E555C72244C914006A3E62 /* QuizApp */,
+				F2E555C62244C914006A3E62 /* Products */,
+				F78B0D3946804DEC689DD69C /* Pods */,
+				781D5FCF295461F5FA6557EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2E555C62244C914006A3E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2E555C52244C914006A3E62 /* QuizApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2E555C72244C914006A3E62 /* QuizApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D85742265609700C8CD02 /* Models */,
+				EF1D85752265609F00C8CD02 /* Views */,
+				EF1D8576226560A600C8CD02 /* Controllers */,
+				EF1D8577226560AD00C8CD02 /* Commons */,
+				F2E555CF2244C916006A3E62 /* Assets.xcassets */,
+				F2E555D42244C916006A3E62 /* Info.plist */,
+			);
+			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		F2F6D050227EEC6B00872CEF /* keisan */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6D051227EECAE00872CEF /* koyosaidaika.png */,
+				F2F6D055227EFE2500872CEF /* rodokyoukyu.png */,
+				F2F6D053227EFDDF00872CEF /* sisyutusaidai.png */,
+				F2F6D057227F02D100872CEF /* izitennkann.png */,
+			);
+			path = keisan;
+			sourceTree = "<group>";
+		};
+		F78B0D3946804DEC689DD69C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748D40009674A5759A2ABDAA /* Pods-QuizApp.debug.xcconfig */,
+				270205EC0DE0B0B94213AF94 /* Pods-QuizApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2E555C42244C914006A3E62 /* QuizApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E555D72244C916006A3E62 /* Build configuration list for PBXNativeTarget "QuizApp" */;
+			buildPhases = (
+				5696B289F9073629441A3101 /* [CP] Check Pods Manifest.lock */,
+				F2E555C12244C914006A3E62 /* Sources */,
+				F2E555C22244C914006A3E62 /* Frameworks */,
+				F2E555C32244C914006A3E62 /* Resources */,
+				3B3BE07C5369DD0833E06D0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuizApp;
+			productName = QuizApp;
+			productReference = F2E555C52244C914006A3E62 /* QuizApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2E555BD2244C914006A3E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Hayatokakiuchi;
+				TargetAttributes = {
+					F2E555C42244C914006A3E62 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F2E555C02244C914006A3E62 /* Build configuration list for PBXProject "QuizApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2E555BC2244C914006A3E62;
+			productRefGroup = F2E555C62244C914006A3E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2E555C42244C914006A3E62 /* QuizApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2E555C32244C914006A3E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2409E792270EF8F005F060E /* yojo.png in Resources */,
+				F209997D22721810007DA8B4 /* vc-up.png in Resources */,
+				F2409E732270EF21005F060E /* tc.png in Resources */,
+				F2099977227205A5007DA8B4 /* mr=mc.png in Resources */,
+				F25F79862281A74F00C4B126 /* QuizIcon２.001.jpeg in Resources */,
+				F25F797C2281A4DF00C4B126 /* Icon-App-60x60@2x.png in Resources */,
+				F2409E6B2270EEC9005F060E /* zai1.png in Resources */,
+				F2409E692270EEBD005F060E /* danryokusei.png in Resources */,
+				F25F79762281A4DF00C4B126 /* ItunesArtwork@2x.png in Resources */,
+				F2409E6F2270EEE3005F060E /* zai3.png in Resources */,
+				F2409E752270EF39005F060E /* warurasu.png in Resources */,
+				F25F797A2281A4DF00C4B126 /* Icon-App-40x40@2x.png in Resources */,
+				F25F797D2281A4DF00C4B126 /* Icon-App-76x76@1x.png in Resources */,
+				F286A1B12264B238007667B0 /* ResultTableViewCell.xib in Resources */,
+				F25F79752281A4DF00C4B126 /* Icon-App-20x20@3x.png in Resources */,
+				F25F79732281A4DF00C4B126 /* Icon-App-20x20@1x.png in Resources */,
+				F2F6D054227EFDDF00872CEF /* sisyutusaidai.png in Resources */,
+				F2F6D04F227ED9F600872CEF /* bb8-dribbble.gif in Resources */,
+				F2E555D32244C916006A3E62 /* LaunchScreen.storyboard in Resources */,
+				F2CE98F7226F6A5800BE68F8 /* Button（新規登録）.png in Resources */,
+				F25F79812281A4DF00C4B126 /* iTunesArtwork@2x.png in Resources */,
+				F2F6D052227EECAE00872CEF /* koyosaidaika.png in Resources */,
+				F2CE98F1226F66E500BE68F8 /* pai2.png in Resources */,
+				F25F797B2281A4DF00C4B126 /* Icon-App-60x60@3x.png in Resources */,
+				F209997B22721802007DA8B4 /* yosannsenn.png in Resources */,
+				F2409E712270EF14005F060E /* kouka.png in Resources */,
+				F2409E7D2270F076005F060E /* syotoku.png in Resources */,
+				F25F797E2281A4DF00C4B126 /* Icon-App-40x40@3x.png in Resources */,
+				F25F79742281A4DF00C4B126 /* Icon-App-83.5x83.5@2x.png in Resources */,
+				F25F79782281A4DF00C4B126 /* Icon-App-20x20@2x.png in Resources */,
+				F2F6D058227F02D100872CEF /* izitennkann.png in Resources */,
+				EF1D85722264C85700C8CD02 /* batsuImage.png in Resources */,
+				F209998122722D31007DA8B4 /* siyutu.png in Resources */,
+				F25F79822281A4DF00C4B126 /* iTunesArtwork@3x.png in Resources */,
+				F25F79722281A4DF00C4B126 /* Icon-App-40x40@1x.png in Resources */,
+				F2DB72B12282DF8100859E8E /* hukidasi.png in Resources */,
+				F2409E7B2270EF9C005F060E /* sikaju.png in Resources */,
+				F2DB72AF2282DE9700859E8E /* kid_job_boy_teacher.png in Resources */,
+				EF1D85732264C85700C8CD02 /* maruImage.png in Resources */,
+				F2115FEE22801E1F00202A75 /* seisankansu.png in Resources */,
+				F2409E7F2270F086005F060E /* kakaku.png in Resources */,
+				F25F797F2281A4DF00C4B126 /* Icon-App-29x29@2x.png in Resources */,
+				F2409E672270D5D9005F060E /* icons8-video@2x.png in Resources */,
+				F25F79702281A4DF00C4B126 /* Icon-App-76x76@2x.png in Resources */,
+				F25F796F2281A4DF00C4B126 /* iTunesArtwork@1x.png in Resources */,
+				F2115FF02280327F00202A75 /* hiyokannsu.png in Resources */,
+				F2409E6D2270EED8005F060E /* zai2.png in Resources */,
+				F25F79772281A4DF00C4B126 /* Contents.json in Resources */,
+				F2409E772270EF47005F060E /* ma-syaru.png in Resources */,
+				F2E555D02244C916006A3E62 /* Assets.xcassets in Resources */,
+				F209997F22722D1D007DA8B4 /* leonchef.png in Resources */,
+				F2CE98F3226F66F100BE68F8 /* pai3.png in Resources */,
+				F2CE98ED226F66B900BE68F8 /* mc.png in Resources */,
+				F25F79712281A4DF00C4B126 /* Icon-App-29x29@1x.png in Resources */,
+				F2409E632270D5C5005F060E /* icons8-home-48@2x.png in Resources */,
+				F2409E652270D5D0005F060E /* icons8-menu-48@2x.png in Resources */,
+				F25F79792281A4DF00C4B126 /* Icon-App-29x29@3x.png in Resources */,
+				F2099979227205B8007DA8B4 /* kouritu.png in Resources */,
+				F2CE98EF226F66D400BE68F8 /* pai1.png in Resources */,
+				F2E555CE2244C914006A3E62 /* Main.storyboard in Resources */,
+				F2F6D056227EFE2500872CEF /* rodokyoukyu.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B3BE07C5369DD0833E06D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizApp/Pods-QuizApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizApp/Pods-QuizApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5696B289F9073629441A3101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuizApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2E555C12244C914006A3E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B3C0C3225790B50091B470 /* DetailViewController4.swift in Sources */,
+				F2CE98F9226F8F1A00BE68F8 /* SelectionQuiz.swift in Sources */,
+				F2E333E72260B70600B3C0F6 /* SecondViewController3.swift in Sources */,
+				F28979B5224513F600CA7F4D /* QuizViewController3.swift in Sources */,
+				F23719F1224B87B300486DCC /* Result.swift in Sources */,
+				F2E555E92244E1A8006A3E62 /* SecondViewController.swift in Sources */,
+				F23719F5224BA12500486DCC /* DetailViewController2.swift in Sources */,
+				F2B3C0C5225790CE0091B470 /* DetailViewController5.swift in Sources */,
+				EF1D857E2265615400C8CD02 /* DetailViewController3.swift in Sources */,
+				F23719F3224B9FBD00486DCC /* DetailViewController1.swift in Sources */,
+				F28979BB2245146C00CA7F4D /* QuizViewController6.swift in Sources */,
+				F2E555EB2244E343006A3E62 /* QuizViewController1.swift in Sources */,
+				F2E333E32260B5FC00B3C0F6 /* ViewController3.swift in Sources */,
+				F2E555CB2244C914006A3E62 /* ViewController.swift in Sources */,
+				F2E555C92244C914006A3E62 /* AppDelegate.swift in Sources */,
+				F2E555DF2244D875006A3E62 /* Quiz.swift in Sources */,
+				F28979B3224513DE00CA7F4D /* QuizViewController2.swift in Sources */,
+				F2B3C0C7225790E60091B470 /* DetailViewController6.swift in Sources */,
+				F28979B72245141300CA7F4D /* QuizViewController4.swift in Sources */,
+				F21DC89F226EF13C00746D79 /* TabBarController.swift in Sources */,
+				F286A1B02264B238007667B0 /* ResultTableViewCell.swift in Sources */,
+				F28979B92245144200CA7F4D /* QuizViewController5.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2E555CC2244C914006A3E62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E555CD2244C914006A3E62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2E555D12244C916006A3E62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2E555D22244C916006A3E62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2E555D52244C916006A3E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2E555D62244C916006A3E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2E555D82244C916006A3E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748D40009674A5759A2ABDAA /* Pods-QuizApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 383UUXXS59;
+				INFOPLIST_FILE = QuizApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hayatokakiuchi.QuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2E555D92244C916006A3E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 270205EC0DE0B0B94213AF94 /* Pods-QuizApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 383UUXXS59;
+				INFOPLIST_FILE = QuizApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Hayatokakiuchi.QuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2E555C02244C914006A3E62 /* Build configuration list for PBXProject "QuizApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E555D52244C916006A3E62 /* Debug */,
+				F2E555D62244C916006A3E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E555D72244C916006A3E62 /* Build configuration list for PBXNativeTarget "QuizApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E555D82244C916006A3E62 /* Debug */,
+				F2E555D92244C916006A3E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2E555BD2244C914006A3E62 /* Project object */;
+}
